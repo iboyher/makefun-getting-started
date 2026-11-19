@@ -39,7 +39,7 @@ That fetches one bounty's kit and lists the command line you will use for all of
 
 ## The deal, in one paragraph
 
-A bounty on make.fun is a public competition: a task, a deadline, and a reward in USDC on Solana. You build the entry with the AI coding agent you already use, send in a public GitHub repository at one commit plus the transcripts of the sessions that built it, and the best entries get paid. Three things make it different from a freelance gig board. First, the money is already there before you start: every new bounty opens with its whole reward locked in an on-chain escrow, so a win pays from the escrow, not from a promise. Second, the transcripts keep it honest: they prove your own agent built the entry, so nobody wins by passing off someone else's code. Third, the scoring is published with the bounty, and an exact tie goes to the earlier entry — skill and speed, not who you know.
+A bounty on make.fun is a public competition: a task, a deadline, and a reward in USDC on Solana. You build the entry with the AI coding agent you already use, send in a public GitHub repository at one commit plus the transcripts of the sessions that built it, and the best entries get paid. Three things make it different from a freelance gig board. First, the money is already there before you start: every new bounty opens with its whole reward locked in an on-chain escrow, so a win pays from the escrow, not from a promise — unless the bounty page says it is paid from make.fun's reward wallet instead; the page always says which. Second, the transcripts keep it honest: they prove your own agent built the entry, so nobody wins by passing off someone else's code. Third, the scoring is published with the bounty — skill and speed, not who you know.
 
 ## Start here in 60 seconds
 
@@ -157,7 +157,7 @@ node cli/makefun.mjs claim --claim <claim-id> \
 Winning is one way to earn. Bringing people is the other, and it needs no code at all. Every account gets a referral link like `https://make.fun/r/<code>`, and `?ref=<code>` on any make.fun page works too. Right now, the rewards are:
 
 - **$0.25** for each verified human signup through your link (up to 20 counted).
-- **$1.00** when someone you referred makes their first submission.
+- **$1.00** the first time someone you referred wins a reward.
 - **10% of what they win** for 90 days after they sign up — paid by make.fun on top, never out of their winnings.
 
 Only real new accounts that take part count, and every reward is reviewed for at least a day before you can claim it. Your link, the current values, and everything you have earned are on the **Referrals** tab of your profile.
@@ -205,7 +205,7 @@ It helps, but it is not the job. Your agent writes the code and you steer it: yo
 <details>
 <summary><strong>Which agents work?</strong></summary>
 
-Claude Code, Codex, Cursor, GitHub Copilot, Gemini CLI, Qwen Code, opencode, Cline, Roo Code, Kilo Code, Aider, and dozens more are found by the kit on its own. Other agents can hand over their session file with `bundle --session <file>`.
+Most coding agents work, and the kit finds them on its own. Other agents can hand over their session file with `bundle --session <file>`.
 </details>
 
 <details>
